@@ -1,0 +1,46 @@
+/* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .hero {
+    background-color: #FDF3F3;
+  }
+
+  /* Header */
+
+  .quiltfo-nav {
+    background-color: #f18a88;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .quiltfo-nav-left,
+  .quiltfo-nav-right {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: .8em;
+  }
+
+  .quiltfo-nav-item {
+    padding-left: .8em;
+    font-weight: 500;
+    
+  }
+
+  .clickable:hover {
+    color: #301b1b;
+  }
+
+  /* About section */
+.about {
+  background-image: url("/images/Megan_Trans_Quilt.png");
+}
+
+
+
+
