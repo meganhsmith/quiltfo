@@ -6,7 +6,7 @@
   }
 
   .body {
- 
+    height: 100vh;
   }
 
   .hero {
@@ -22,7 +22,8 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
-    height: 10vh;
+    height: 10%;
+    z-index: 1;
   }
 
   .quiltfo-nav-left,
@@ -47,7 +48,7 @@
 
 #about-home {
  background-image: url("/images/Megan_Trans_Quilt.png");
- height: 90vh;
+ height: 20%;
  background-position: center;
  background-repeat: no-repeat;
 background-size: cover;
