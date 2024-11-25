@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .body {
@@ -47,23 +47,38 @@
   /* About section */
 
 #about-home {
- background-image: url("/images/Megan_Trans_Quilt.png");
- height: 20%;
- background-position: center;
- background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-opacity: .8;
+  background-image: url("/images/Megan_Trans_Quilt.png");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  opacity: .8;
 }
 
 .about-aside {
-  margin: 25%;
+  margin: 10% 25%;
+  border: #301b1b;
+  border-style: ridge;
+  border-width: 2px;
   background-color: #fdf3f3;
+  color: #301b1b;
   text-align: center;
+  font-size: 18px;
+  padding: 1em;
+  opacity: .9;
 }
 
 #about-button {
+  margin: 10px;
+  width: 150px;
   background-color: #8A9A5B;
   color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
