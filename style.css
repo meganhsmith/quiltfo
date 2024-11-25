@@ -5,8 +5,12 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
+  .body {
+ 
+  }
+
   .hero {
-    background-color: #FDF3F3;
+
   }
 
   /* Header */
@@ -16,6 +20,9 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 10vh;
   }
 
   .quiltfo-nav-left,
@@ -37,10 +44,25 @@
   }
 
   /* About section */
-.about {
-  background-image: url("/images/Megan_Trans_Quilt.png");
+
+#about-home {
+ background-image: url("/images/Megan_Trans_Quilt.png");
+ height: 90vh;
+ background-position: center;
+ background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+opacity: .8;
 }
 
+.about-aside {
+  margin: 25%;
+  background-color: #fdf3f3;
+  text-align: center;
+}
 
-
+#about-button {
+  background-color: #8A9A5B;
+  color: white;
+}
 
