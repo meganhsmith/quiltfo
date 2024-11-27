@@ -10,7 +10,20 @@
   }
 
   .hero {
+    margin: 0 1em;
+  }
 
+  h3 {
+    color: #8A9A5B;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color:#301b1b;
   }
 
   /* Header */
@@ -31,7 +44,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    padding: .8em;
+    padding: 1em 1em 1em 0;
   }
 
   .quiltfo-nav-item {
@@ -44,10 +57,11 @@
     color: #301b1b;
   }
 
-  /* About section */
+  /* About section & page */
 
-#about-home {
+  #about-home {
   background-image: url("/images/Megan_Trans_Quilt.png");
+  margin-bottom: 25px;
   height: 20%;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +78,7 @@
   background-color: #fdf3f3;
   color: #301b1b;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.1em;
   padding: 1em;
   opacity: .9;
 }
@@ -72,7 +86,7 @@
 #about-button {
   margin: 10px;
   width: 150px;
-  background-color: #8A9A5B;
+  background-color: rgb(138, 154, 91, 1);
   color: white;
   border: none;
   padding: 10px;
@@ -81,4 +95,54 @@
   display: inline-block;
   font-size: 16px;
 }
+
+.about {
+  margin: 1em;
+}
+
+.quiltfo-image-container {
+  height: 100px;
+  display: inline-block;
+}
+
+.quiltfo-image {
+  width: 150px;
+  float: left;
+  padding-right: 1em;
+}
+
+/* Gallery Home page */
+
+.gallery-home-container, .gallery-quilt-container {
+  border: solid 2px;
+}
+
+.gallery-home-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .gallery-home-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .gallery-home-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-home-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
 
