@@ -11,9 +11,10 @@
 
   .hero {
     margin: 0 1em;
+    text-align: center;
   }
 
-  h3 {
+  h2 {
     color: #8A9A5B;
   }
 
@@ -55,6 +56,19 @@
 
   .clickable:hover {
     color: #301b1b;
+  }
+
+ button {
+    margin: 10px;
+    width: 150px;
+    background-color: rgb(138, 154, 91);
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
 
   /* About section & page */
@@ -113,10 +127,6 @@
 
 /* Gallery Home page */
 
-.gallery-home-container, .gallery-quilt-container {
-  border: solid 2px;
-}
-
 .gallery-home-container {
     justify-content: center;
     display: grid;
@@ -143,6 +153,54 @@
   }
 }
 
+.gallery-quilt-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid;
+  border-color: #301b1b;
+}
 
+.gallery-quilt-image {
+  background-size: cover;
+  background-position: center center;
+  height: 50dvh;
+}
 
+.gallery-quilt-text {
+  padding: 5px;
+  color: #301b1b;
+}
+
+#sunset-strip-i {
+  background-image: url("/images/SunsetStripI.jpg");
+}
+
+#southwest-improv {
+  background-image: url("/images/SouthwestImprov.jpg");
+}
+
+#scrappy-stars {
+  background-image: url("/images/ScrappyStars.jpg");
+}
+
+#color-study {
+  background-image: url("/images/ColorStudyI.jpg");
+}
+
+#first-rodeo {
+  background-image: url("/images/FirstRodeo.jpg");
+}
+
+#sunset-strip {
+  background-image: url("/images/SunsetStrip.jpg");
+}
+
+#true-scrappy {
+  background-image: url("/images/TrueScrappy.jpg");
+}
+
+#desert-rat {
+  background-image: url("/images/DesertRat.jpg");
+}
 
