@@ -14,7 +14,7 @@
     text-align: center;
   }
 
-  h2 {
+  h2, h3 {
     color: #8A9A5B;
   }
 
@@ -26,6 +26,21 @@
   a:hover {
     color:#301b1b;
   }
+
+  button {
+    width: 150px;
+    background-color: rgb(138, 154, 91);
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 1;
+  }
+
+
 
   /* Header */
 
@@ -58,25 +73,13 @@
     color: #301b1b;
   }
 
- button {
-    margin: 10px;
-    width: 150px;
-    background-color: rgb(138, 154, 91);
-    color: white;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
 
   /* About section & page */
 
   #about-home {
   background-image: url("/images/Megan_Trans_Quilt.png");
   margin-bottom: 25px;
-  height: 20%;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,41 +90,33 @@
 .about-aside {
   margin: 10% 25%;
   border: #301b1b;
+  height: max-content;
   border-style: ridge;
   border-width: 2px;
-  background-color: #fdf3f3;
+  background-color: rgba(253, 243, 243, .9);
   color: #301b1b;
   text-align: center;
   font-size: 1.1em;
   padding: 1em;
-  opacity: .9;
-}
-
-#about-button {
-  margin: 10px;
-  width: 150px;
-  background-color: rgb(138, 154, 91, 1);
-  color: white;
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 
 .about {
   margin: 1em;
+  height: 90vh;
+  display: flex;
+}
+
+#about-button {
+  margin: 10px;
 }
 
 .quiltfo-image-container {
-  height: 100px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .quiltfo-image {
   width: 150px;
-  float: left;
   padding-right: 1em;
 }
 
@@ -157,14 +152,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: solid;
-  border-color: #301b1b;
+  border-style: ridge;
+  border-color: #482928;
+  border
 }
 
 .gallery-quilt-image {
   background-size: cover;
   background-position: center center;
-  height: 50dvh;
+  height: 35vh;
 }
 
 .gallery-quilt-text {
@@ -204,3 +200,110 @@
   background-image: url("/images/DesertRat.jpg");
 }
 
+/* Contact form */
+
+.contact {
+  height: 90vh;
+}
+
+.submit-btn {
+  background-color: rgb(138, 154, 91);
+  color: white;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+form {
+  margin: 25px;
+}
+
+/* Show Button */
+
+.show{
+  cursor: pointer;
+  
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+/* Close Button */
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+/* The mask */
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+/* Modal */
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: #bdc3c7;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transform: translateY(45px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Class Active */
+
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* When active class is added, that affects the modal class */
+
+.active + .modal{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer*/
+
+footer {
+  background-color: #bdbdbd;
+}
+
+.footer-text {
+  margin: 0 1em;
+  padding: 2px 0;
+  font-size: .8em;
+}

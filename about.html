@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>About The Quiltfo</title>
 </head>
 <body>
@@ -19,17 +20,39 @@
             <p class ="quiltfo-nav-item clickable"><a href="about.html">About</a></p>
             <p class ="quiltfo-nav-item clickable">Gallery</p>
             <p class ="quiltfo-nav-item clickable">Blog</p>
-            <p class ="quiltfo-nav-item clickable">Contact</p>
+            <p class ="quiltfo-nav-item clickable"><a href="contact.html">Contact</a></p>
         </section>
     </header>
-    <section class="about">
+    <section class="hero about">
+        <div class="quiltfo-image-container">
         <img class="quiltfo-image" src="images/quiltfo.jpg" alt="Quiltfo Silhouette">
+        <button class="show" aria-haspopup="true">Contact</button>
+        <div class="mask" role="dialog">
+        </div>
+        <div class="modal" role="alert">
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input class="submit-btn" type="submit" value="Submit">
+              </form>
+          <button class="close" role="button">X</button>
+        </div>
+    </div>
+    <div class="quiltfo-about-text">
     <h3>About The Quiltfo</h3>
     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Blandit porttitor ex erat et nam efficitur. Avitae fusce sapien, tristique lectus penatibus nullam. Praesent duis aenean nibh suscipit donec ante amet. Lacus eleifend lacinia adipiscing tristique vehicula sagittis fames himenaeos. Imperdiet sed porttitor, luctus sem malesuada magnis congue viverra.
     </p>
     <br>
     <p>Torquent senectus ac metus praesent curabitur blandit; pretium torquent. Primis praesent turpis vehicula porttitor, consectetur tempus platea nostra. Quam aliquam facilisi donec, eget luctus nascetur rutrum vitae. Sed lectus parturient sapien etiam dui maximus iaculis eros. Lacus quis non et vel quam laoreet iaculis. Blandit conubia pharetra in, risus class nisi phasellus. Mauris mi gravida libero sollicitudin nec platea porttitor. Inceptos sit curae sollicitudin non, vulputate tempus neque? Condimentum quisque eros elementum venenatis potenti facilisi platea.     
     </p>
+</div>
 </section>
 </body>
+<footer>
+    <p class="footer-text">The Quiltfo &copy;</p>
+</footer>
 </html>
